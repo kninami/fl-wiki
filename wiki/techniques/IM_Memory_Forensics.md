@@ -4,8 +4,8 @@ perspective: Investigator
 topic: Extraction
 attck: —
 related_artifacts:
-  - Telegram Desktop Memory
-  - Windows NT Heap
+  - Telegram_Desktop_Memory
+  - Windows_NT_Heap
 related_crime:
   - 디지털성범죄
   - 마약 범죄

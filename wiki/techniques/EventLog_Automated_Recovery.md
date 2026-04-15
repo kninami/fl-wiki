@@ -4,7 +4,7 @@ perspective: Investigator
 topic: Extraction
 attck: —
 related_artifacts:
-  - Windows Event Log
+  - Windows_Event_Log
 related_crime:
   - 사이버범죄 수사
   - 일반 컴퓨터 포렌식

@@ -5,7 +5,7 @@ topic: Analysis
 attck: —
 related_artifacts:
   - $LogFile
-  - Windows Event Log
+  - Windows_Event_Log
 related_crime:
   - 현장 선별 압수
   - 디지털 증거 수집

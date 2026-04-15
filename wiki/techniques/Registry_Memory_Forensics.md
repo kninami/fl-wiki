@@ -4,7 +4,7 @@ perspective: Investigator
 topic: Extraction
 attck: —
 related_artifacts:
-  - Windows Registry (In-Memory)
+  - Windows_Registry_Memory
 related_crime:
   - 멀웨어 분석
   - APT 수사

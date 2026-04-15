@@ -1,1 +1,6 @@
-{}
+{
+  "userIgnoreFilters": [
+    "wiki/meta/",
+    "wiki/papers/"
+  ]
+}

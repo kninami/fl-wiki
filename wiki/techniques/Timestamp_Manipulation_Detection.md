@@ -7,7 +7,7 @@ related_artifacts:
   - $LogFile
   - $USNjrnl
   - Prefetch
-  - Windows Event Log
+  - Windows_Event_Log
 related_crime:
   - 증거인멸
   - 알리바이 조작

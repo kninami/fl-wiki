@@ -4,8 +4,8 @@ perspective: Investigator
 topic: Extraction
 attck: —
 related_artifacts:
-  - ReFS Logfile
-  - ReFS Change Journal
+  - ReFS_Logfile
+  - ReFS_Change_Journal
   - $LogFile
   - $USNjrnl
 related_crime:

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "68e654199f530768",
+        "id": "66246f32b974c1d5",
         "type": "tabs",
         "children": [
           {
-            "id": "dde16539b2936d75",
+            "id": "664f0dccedc6b4ae",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/techniques/Windows_Diagnostics_Forensics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Windows_Diagnostics_Forensics"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
             }
           }
         ]
@@ -183,33 +179,43 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "dde16539b2936d75",
+  "active": "664f0dccedc6b4ae",
   "lastOpenFiles": [
-    "wiki/artifacts/$LogFile.md",
+    "wiki/artifacts/Telegram_Desktop_Memory.md",
+    "wiki/artifacts/Prefetch.md",
+    "wiki/artifacts/$USNjrnl.md",
+    "wiki/meta/log.md",
+    "wiki/meta/index.md",
+    "wiki/papers/bang_2022.md",
     "CLAUDE.md",
+    "wiki/artifacts/Windows_Registry_Memory.md",
+    "wiki/techniques/User_Attribution_Framework.md",
+    "wiki/techniques/Slack_Discord_IM_Forensics.md",
+    "wiki/techniques/Evidence_Preservation_Evolving.md",
+    "wiki/techniques/Windows_Diagnostics_Forensics.md",
+    "raw/Windows 시스템 및 지갑 앱 아티팩트 분석을 통한 암호화폐 수사 지원 기술 연구.pd.pdf",
+    "raw/ReFS 데이터 저장 원리 분석 및 메타데이터를 이용한 삭제된 데이터 복구 기술 연구.pdf",
+    "raw/Windows에서의 Wire 크리덴셜 획득 및 아티팩트 분석.pdf",
+    "raw/Windows 11에 설치된 Windows Subsystem for Android 포렌식 .pdf",
+    "raw/Windows 10 내의 하이버네이션 파일에 대한 포렌식 활용 방안 = A Study on Utilization of Windows 10 Hibernation File for Digital Forensics.pdf",
+    "raw/Window8 관점에서의 디지털 포렌식 분석과 R을 이용한 소설 네트워크 관계도 분석 기법.pdf",
+    "raw/File wiping 행위 탐지를 위한 Windows 아티팩트 흔적 분석 연구 (1).pdf",
+    "raw/협업 툴의 사용자 행위별 아티팩트 분석 연구 - 운영환경에 따른 differential f.pdf",
+    "raw/협업 툴 아티팩트 분석 및 삭제된 데이터 복구 연구.pdf",
+    "raw/윈도우즈 시스템 포렌식.pdf",
+    "wiki/artifacts/$LogFile.md",
     "README.md",
     "wiki/techniques/Memory_Heap_Forensics.md",
     "wiki/artifacts/ReFS_Logfile.md",
     "wiki/techniques/eBPF_Container_DFIR.md",
-    "wiki/meta/index.md",
-    "wiki/meta/log.md",
     "wiki/techniques/Artifact_Knowledge_Management.md",
     "wiki/techniques/Selective_Seizure_Evaluation.md",
-    "wiki/techniques/Evidence_Preservation_Evolving.md",
     "wiki/techniques/DFIR_Tool_Error_Mitigation.md",
     "wiki/techniques/Registry_Memory_Forensics.md",
     "wiki/techniques/EventLog_Automated_Recovery.md",
     "wiki/techniques/IM_Memory_Forensics.md",
     "wiki/papers/jin_2025.md",
     "wiki/papers/hargreaves_2024.md",
-    "wiki/artifacts/Windows_Diagnostics_EventTranscript.md",
-    "wiki/artifacts/Windows_Registry_Memory.md",
-    "wiki/techniques/Synthetic_Trace_Generation.md",
-    "wiki/techniques/Data_Remnants_Forensics.md",
-    "wiki/techniques/ReFS_Journaling_Forensics.md",
-    "wiki/techniques/Windows_Diagnostics_Forensics.md",
-    "wiki/techniques/Timestamp_Manipulation_Detection.md",
-    "wiki/artifacts/Microsoft365_DRF.md",
-    "wiki/artifacts/ReFS_Change_Journal.md"
+    "wiki/artifacts/Windows_Diagnostics_EventTranscript.md"
   ]
 }

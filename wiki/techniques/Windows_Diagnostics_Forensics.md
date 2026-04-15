@@ -4,7 +4,7 @@ perspective: Investigator
 topic: Extraction
 attck: —
 related_artifacts:
-  - Windows Diagnostics (EventTranscript.db)
+  - Windows_Diagnostics_EventTranscript
 related_crime:
   - 디지털성범죄
   - 마약 범죄

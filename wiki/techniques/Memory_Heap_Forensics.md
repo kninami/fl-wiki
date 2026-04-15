@@ -4,7 +4,7 @@ perspective: Investigator
 topic: Extraction
 attck: —
 related_artifacts:
-  - Windows NT Heap
+  - Windows_NT_Heap
 related_crime:
   - 멀웨어 분석
   - C2 통신 추적
