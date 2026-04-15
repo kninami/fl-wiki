@@ -1,4 +1,5 @@
-.obsidan
+.obsidian/
+.obsidian/*
 .claude
 *.pdf
 .DS_Store
