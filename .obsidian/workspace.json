@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "66246f32b974c1d5",
+        "id": "ca48e0c788566341",
         "type": "tabs",
         "children": [
           {
-            "id": "664f0dccedc6b4ae",
+            "id": "8cccb98fed1f2b59",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "wiki/artifacts/Wire_Cookies_DB.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Wire_Cookies_DB"
             }
           }
         ]
@@ -179,20 +183,34 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "664f0dccedc6b4ae",
+  "active": "8cccb98fed1f2b59",
   "lastOpenFiles": [
-    "wiki/artifacts/Telegram_Desktop_Memory.md",
-    "wiki/artifacts/Prefetch.md",
-    "wiki/artifacts/$USNjrnl.md",
+    "wiki/artifacts/Windows_Event_Log.md",
+    "CLAUDE.md",
+    "wiki/techniques/eBPF_Container_DFIR.md",
     "wiki/meta/log.md",
     "wiki/meta/index.md",
-    "wiki/papers/bang_2022.md",
-    "CLAUDE.md",
-    "wiki/artifacts/Windows_Registry_Memory.md",
+    "wiki/artifacts/$USNjrnl.md",
+    "wiki/papers/dolangavitt_2008.md",
+    "wiki/artifacts/$LogFile.md",
+    "wiki/artifacts/Prefetch.md",
+    "wiki/techniques/Wire_Credential_Acquisition.md",
+    "wiki/techniques/Windows_System_Forensics_Survey.md",
+    "wiki/techniques/Win8_IM_App_Forensics.md",
+    "wiki/techniques/WeChat_Artifact_Analysis.md",
+    "wiki/techniques/WSA_Forensics.md",
     "wiki/techniques/User_Attribution_Framework.md",
+    "wiki/techniques/Teams_Differential_Forensics.md",
     "wiki/techniques/Slack_Discord_IM_Forensics.md",
-    "wiki/techniques/Evidence_Preservation_Evolving.md",
-    "wiki/techniques/Windows_Diagnostics_Forensics.md",
+    "wiki/techniques/ReFS_Deleted_Data_Recovery.md",
+    "wiki/techniques/JANDI_NAVER_WORKS_Android_Forensics.md",
+    "wiki/techniques/JANDI_Artifact_Analysis.md",
+    "wiki/techniques/Hibernation_Forensics.md",
+    "wiki/techniques/File_Wiping_Detection.md",
+    "wiki/techniques/Cryptocurrency_Wallet_Forensics.md",
+    "wiki/techniques/Automated_User_Analysis.md",
+    "wiki/papers/yun_2015.md",
+    "wiki/papers/we_2024.md",
     "raw/Windows 시스템 및 지갑 앱 아티팩트 분석을 통한 암호화폐 수사 지원 기술 연구.pd.pdf",
     "raw/ReFS 데이터 저장 원리 분석 및 메타데이터를 이용한 삭제된 데이터 복구 기술 연구.pdf",
     "raw/Windows에서의 Wire 크리덴셜 획득 및 아티팩트 분석.pdf",
@@ -202,20 +220,6 @@
     "raw/File wiping 행위 탐지를 위한 Windows 아티팩트 흔적 분석 연구 (1).pdf",
     "raw/협업 툴의 사용자 행위별 아티팩트 분석 연구 - 운영환경에 따른 differential f.pdf",
     "raw/협업 툴 아티팩트 분석 및 삭제된 데이터 복구 연구.pdf",
-    "raw/윈도우즈 시스템 포렌식.pdf",
-    "wiki/artifacts/$LogFile.md",
-    "README.md",
-    "wiki/techniques/Memory_Heap_Forensics.md",
-    "wiki/artifacts/ReFS_Logfile.md",
-    "wiki/techniques/eBPF_Container_DFIR.md",
-    "wiki/techniques/Artifact_Knowledge_Management.md",
-    "wiki/techniques/Selective_Seizure_Evaluation.md",
-    "wiki/techniques/DFIR_Tool_Error_Mitigation.md",
-    "wiki/techniques/Registry_Memory_Forensics.md",
-    "wiki/techniques/EventLog_Automated_Recovery.md",
-    "wiki/techniques/IM_Memory_Forensics.md",
-    "wiki/papers/jin_2025.md",
-    "wiki/papers/hargreaves_2024.md",
-    "wiki/artifacts/Windows_Diagnostics_EventTranscript.md"
+    "raw/윈도우즈 시스템 포렌식.pdf"
   ]
 }
