@@ -1,5 +1,5 @@
 # Forensic Memex Wiki Index
-_Last updated: 2026-04-19 | Artifacts: 17 | Techniques: 21 | Papers: 22_
+_Last updated: 2026-04-20 | Artifacts: 19 | Techniques: 28 | Papers: 29_
 
 ## Artifacts
 
@@ -22,6 +22,8 @@ _Last updated: 2026-04-19 | Artifacts: 17 | Techniques: 21 | Papers: 22_
 | [[artifacts/Google_Assistant_Session_Data]] | APP | Android Auto Forensics | hickman_2019 |
 | [[artifacts/ICS_PLC_Network_Traffic]] | APP | ICS Control Logic Forensics | qasim_2020 |
 | [[artifacts/macOS_Page_Queues_Memory]] | OS | macOS Memory Page Queue Forensics | case_2020 |
+| [[artifacts/Xiaomi_MiHome_App_Data]] | APP | IoT Ecosystem Forensics Xiaomi | dragonas_2021 |
+| [[artifacts/Android_System_Log]] | OS | Android Log Evidence Extraction | cheng_2021 |
 
 ## Techniques
 
@@ -48,6 +50,13 @@ _Last updated: 2026-04-19 | Artifacts: 17 | Techniques: 21 | Papers: 22_
 | [[techniques/macOS_Memory_Page_Queue_Forensics]] | Investigator | — | case_2020 |
 | [[techniques/Filesystem_Metadata_Carving]] | Investigator | — | nordvik_2020 |
 | [[techniques/Remote_Live_Forensics_GRR]] | Investigator | — | brown_2020 |
+| [[techniques/Storage_Reconstruction_Formal_Model]] | Investigator | — | schneider_2020 |
+| [[techniques/ICS_Behavioral_Attack_Forensics]] | Investigator | — | neshenko_2021 |
+| [[techniques/IoT_Ecosystem_Forensics_Xiaomi]] | Investigator | — | dragonas_2021 |
+| [[techniques/Android_Log_Evidence_Extraction]] | Investigator | — | cheng_2021 |
+| [[techniques/Smartphone_File_Triage_ML]] | Investigator | — | serhal_2021 |
+| [[techniques/Ransomware_Bitcoin_Detection_TDA]] | Investigator | — | akcora_2021 |
+| [[techniques/Explainable_DFAI]] | Both | — | solanke_2022 |
 
 ## Papers
 
@@ -75,3 +84,10 @@ _Last updated: 2026-04-19 | Artifacts: 17 | Techniques: 21 | Papers: 22_
 | [[papers/case_2020]] | 2020 | 실험 | macOS 페이지 큐 메모리 분석 + Volatility 플러그인 |
 | [[papers/nordvik_2020]] | 2020 | 실험 | 타임스탬프 기반 범용 파일시스템 메타데이터 카빙 (Best Paper) |
 | [[papers/brown_2020]] | 2020 | 시스템 구축 | GRR Rapid Response + Graylog GELF 통합 플러그인 |
+| [[papers/schneider_2020]] | 2020 | 시스템 구축 | 메타데이터 재구성+파일 카빙 통합 형식 모델 LAYR |
+| [[papers/neshenko_2021]] | 2021 | 실험 | BiGAN+RNN+CNN으로 ICS 수처리 시설 공격 탐지·귀인 |
+| [[papers/dragonas_2021]] | 2021 | 실험 | Xiaomi Mi Home Android 앱 IoT 생태계 포렌식 |
+| [[papers/cheng_2021]] | 2021 | 실험 | APK 정적 분석 기반 Android 로그 PII 자동 추출 (LogExtractor) |
+| [[papers/serhal_2021]] | 2021 | 실험 | 파일 메타데이터 ML 기반 스마트폰 파일 트리아지 |
+| [[papers/akcora_2021]] | 2021 | 실험 | TDA 기반 Bitcoin 랜섬웨어 주소 탐지 |
+| [[papers/solanke_2022]] | 2022 | 이론 | 설명 가능한 디지털 포렌식 AI(xDFAI) 프레임워크 |

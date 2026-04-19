@@ -1,5 +1,56 @@
 # Forensic Memex Wiki Log
 
+## [2026-04-20] ingest | raw/new 배치 4/14 (15개 완료)
+- **진행 상황**: raw/new 중 15개 ingest 완료
+- **완료**: schneider_2020, neshenko_2021, dragonas_2021, cheng_2021, serhal_2021, akcora_2021, solanke_2022
+- **다음**: 배치 5 — 이후 알파벳 순 파일부터
+
+### schneider_2020
+- 생성: papers/schneider_2020.md
+- 신규 생성: techniques/Storage_Reconstruction_Formal_Model.md
+- 아티팩트 직접 분석 없음 (형식 모델 논문)
+- 모순 없음
+
+### neshenko_2021
+- 생성: papers/neshenko_2021.md
+- 신규 생성: techniques/ICS_Behavioral_Attack_Forensics.md
+- 아티팩트 직접 분석 없음 (ICS 물리 센서 시계열 데이터 분석)
+- 모순 없음
+
+### dragonas_2021
+- 생성: papers/dragonas_2021.md
+- 신규 생성: artifacts/Xiaomi_MiHome_App_Data.md
+- 신규 생성: techniques/IoT_Ecosystem_Forensics_Xiaomi.md
+- 모순 없음
+
+### cheng_2021
+- 생성: papers/cheng_2021.md
+- 신규 생성: artifacts/Android_System_Log.md
+- 신규 생성: techniques/Android_Log_Evidence_Extraction.md
+- 모순 없음
+
+### serhal_2021
+- 생성: papers/serhal_2021.md
+- 신규 생성: techniques/Smartphone_File_Triage_ML.md
+- 아티팩트 직접 분석 없음 (파일 메타데이터 ML 피처로 사용)
+- 모순 없음
+
+### akcora_2021
+- 생성: papers/akcora_2021.md
+- 신규 생성: techniques/Ransomware_Bitcoin_Detection_TDA.md
+- 아티팩트 직접 분석 없음 (Bitcoin 블록체인 거래 데이터)
+- 모순 없음
+
+### solanke_2022
+- 생성: papers/solanke_2022.md
+- 신규 생성: techniques/Explainable_DFAI.md
+- 아티팩트 직접 분석 없음 (이론·포지션 논문)
+- 모순 없음
+
+### 참고사항
+- schneider_2020: LAYR 도구, FAU 소속 — nordvik_2020(DFRWS 2020 Best Paper)과 동일 학회 수록
+- dragonas_2021: 루팅 기기(Magisk) 환경 전제 — 비루팅 시 내부 스토리지 접근 불가
+
 ## [2026-04-19] ingest | raw/new 배치 3/14 (8개 완료)
 - **진행 상황**: raw/new 중 8개 ingest 완료
 - **완료**: uroz_2019, hyde_2019, dubois_2019, hickman_2019, qasim_2020, case_2020, nordvik_2020, brown_2020
