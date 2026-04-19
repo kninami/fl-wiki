@@ -24,7 +24,7 @@
 
 ```bash
 # 1. 이 저장소 클론
-git clone https://github.com/skku-forensics/FL-Wiki.git
+git clone https://github.com/kninami/fl-wiki.git
 cd FL-Wiki
 
 # 2. Obsidian에서 vault 열기

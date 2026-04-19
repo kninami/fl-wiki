@@ -1,5 +1,6 @@
-.obsidian/
-.obsidian/*
+.obsidian
+.obsidian/*.json
 .claude
 *.pdf
 .DS_Store
+.Rhistory
