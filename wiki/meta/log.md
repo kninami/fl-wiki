@@ -1,5 +1,80 @@
 # Forensic Memex Wiki Log
 
+## [2026-04-19] ingest | raw/new 배치 3/14 (8개 완료)
+- **진행 상황**: raw/new 중 8개 ingest 완료
+- **완료**: uroz_2019, hyde_2019, dubois_2019, hickman_2019, qasim_2020, case_2020, nordvik_2020, brown_2020
+- **다음**: `2020_USA_pres-memory_forensics_of_android_volatile_memory.pdf` 부터
+
+### case_2020
+- 생성: papers/case_2020.md
+- 신규 생성: artifacts/macOS_Page_Queues_Memory.md
+- 신규 생성: techniques/macOS_Memory_Page_Queue_Forensics.md
+- 모순 없음
+
+### nordvik_2020
+- 생성: papers/nordvik_2020.md
+- 신규 생성: techniques/Filesystem_Metadata_Carving.md
+- artifact 페이지 미생성 (NTFS MFT/Ext4 inode는 기존 wiki에 없으나, 이 논문의 핵심 기여는 카빙 기법 자체임)
+- 모순 없음
+
+### brown_2020
+- 생성: papers/brown_2020.md
+- 신규 생성: techniques/Remote_Live_Forensics_GRR.md
+- 아티팩트 직접 분석 없음 (GRR 출력 데이터 활용한 시스템 구축 논문)
+- 모순 없음
+
+### 참고사항
+- nordvik_2020: DFRWS 2020 Best Paper Award 수상
+
+## [2026-04-19] ingest | raw/new 배치 2/14 (5개 완료)
+- **진행 상황**: raw/new 총 40개 파일 중 5개 ingest 완료 (중복 1개 제외 시 38개 중 5개)
+- **완료**: uroz_2019, hyde_2019, dubois_2019, hickman_2019, qasim_2020
+- **다음**: `2020_USA_paper-fuzzing_closed_source_javascript_engines_with_coverage_guided_feedback.pdf` 부터
+
+### dubois_2019
+- 생성: papers/dubois_2019.md
+- 아티팩트 직접 분석 없음 (학교 보안 인식 발표)
+- 신규 artifact·technique 페이지 없음
+- 모순 없음
+
+### hickman_2019
+- 생성: papers/hickman_2019.md
+- 신규 생성: artifacts/Android_Auto_App_Data.md
+- 신규 생성: artifacts/Google_Assistant_Session_Data.md
+- 신규 생성: techniques/Android_Auto_Forensics.md
+- 모순 없음
+
+### qasim_2020
+- 생성: papers/qasim_2020.md
+- 신규 생성: artifacts/ICS_PLC_Network_Traffic.md
+- 신규 생성: techniques/ICS_Control_Logic_Forensics.md
+- 모순 없음
+
+### 참고사항
+- dubois_2019는 고등학생 발표 — 포렌식 아티팩트 직접 분석 없어 artifact/technique 페이지 미생성
+
+## [2026-04-19] ingest | raw/new 배치 1/14 (2개 완료)
+- **진행 상황**: raw/new 총 40개 파일 중 2개 ingest 완료
+- **완료**: uroz_2019, hyde_2019
+- **다음**: 2019_USA_pres-school_cyber_risk_challenges.pdf 부터 (중복 파일 1개 제외 시 38개 남음)
+
+### uroz_2019
+- 생성: papers/uroz_2019.md
+- 신규 생성: techniques/Windows_ASEP_Persistence.md
+- 업데이트: artifacts/Windows_Registry_Memory.md (uroz_2019 source 추가, Findings 2개 추가)
+- 모순 없음
+
+### hyde_2019
+- 생성: papers/hyde_2019.md
+- 신규 생성: artifacts/Chrome_OS_Browser_History.md
+- 신규 생성: artifacts/Chrome_OS_Local_Data.md
+- 신규 생성: techniques/ChromeOS_Forensics.md
+- 모순 없음
+
+### 참고사항
+- `2019_USA_pres-school_cyber_risk_challenges (1).pdf`는 동일 파일 중복 — 별도 처리 안 함
+- uroz_2019는 기존 ingested uroz_2026과 다른 논문 (동일 저자, 다른 주제)
+
 ## [2026-04-15] ingest | 전체 초기 구축 (14개 논문)
 
 ### uroz_2026

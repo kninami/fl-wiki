@@ -1,5 +1,5 @@
 # Forensic Memex Wiki Index
-_Last updated: 2026-04-15 | Artifacts: 11 | Techniques: 14 | Papers: 14_
+_Last updated: 2026-04-19 | Artifacts: 17 | Techniques: 21 | Papers: 22_
 
 ## Artifacts
 
@@ -16,6 +16,12 @@ _Last updated: 2026-04-15 | Artifacts: 11 | Techniques: 14 | Papers: 14_
 | [[artifacts/ReFS_Logfile]] | FS | ReFS Journaling Forensics | lee_2021 |
 | [[artifacts/ReFS_Change_Journal]] | FS | ReFS Journaling Forensics | lee_2021 |
 | [[artifacts/Microsoft365_DRF]] | APP | Data Remnants Forensics | joun_2023 |
+| [[artifacts/Chrome_OS_Browser_History]] | APP | ChromeOS Forensics | hyde_2019 |
+| [[artifacts/Chrome_OS_Local_Data]] | APP | ChromeOS Forensics | hyde_2019 |
+| [[artifacts/Android_Auto_App_Data]] | APP | Android Auto Forensics | hickman_2019 |
+| [[artifacts/Google_Assistant_Session_Data]] | APP | Android Auto Forensics | hickman_2019 |
+| [[artifacts/ICS_PLC_Network_Traffic]] | APP | ICS Control Logic Forensics | qasim_2020 |
+| [[artifacts/macOS_Page_Queues_Memory]] | OS | macOS Memory Page Queue Forensics | case_2020 |
 
 ## Techniques
 
@@ -35,6 +41,13 @@ _Last updated: 2026-04-15 | Artifacts: 11 | Techniques: 14 | Papers: 14_
 | [[techniques/Artifact_Knowledge_Management]] | Both | — | grajeda_2018 |
 | [[techniques/DFIR_Tool_Error_Mitigation]] | Investigator | — | hargreaves_2024 |
 | [[techniques/Evidence_Preservation_Evolving]] | Investigator | — | spichiger_2025 |
+| [[techniques/Windows_ASEP_Persistence]] | Both | T1547 | uroz_2019 |
+| [[techniques/ChromeOS_Forensics]] | Investigator | — | hyde_2019 |
+| [[techniques/Android_Auto_Forensics]] | Investigator | — | hickman_2019 |
+| [[techniques/ICS_Control_Logic_Forensics]] | Investigator | — | qasim_2020 |
+| [[techniques/macOS_Memory_Page_Queue_Forensics]] | Investigator | — | case_2020 |
+| [[techniques/Filesystem_Metadata_Carving]] | Investigator | — | nordvik_2020 |
+| [[techniques/Remote_Live_Forensics_GRR]] | Investigator | — | brown_2020 |
 
 ## Papers
 
@@ -53,4 +66,12 @@ _Last updated: 2026-04-15 | Artifacts: 11 | Techniques: 14 | Papers: 14_
 | [[papers/palmbach_2020]] | 2020 | 실험 | NTFS 타임스탬프 조작 탐지 아티팩트 신뢰도 평가 |
 | [[papers/grajeda_2018]] | 2018 | 시스템 구축 | AGP 아티팩트 지식 공유 플랫폼 |
 | [[papers/dolangavitt_2008]] | 2008 | 실험 | 물리 메모리 내 Windows 레지스트리 포렌식 |
+| [[papers/uroz_2019]] | 2019 | 실험 | Windows ASEP 분류 + 메모리 포렌식 탐지 가능 여부 |
+| [[papers/hyde_2019]] | 2019 | 실험 | Chrome OS / Chromebook 포렌식 아티팩트 |
 | [[papers/murphey_2007]] | 2007 | 실험 | Windows NT5 이벤트 로그 자동 복구 |
+| [[papers/dubois_2019]] | 2019 | 시연 | 학교 환경 사이버 위협 벡터 + 커뮤니티 치안 대응 |
+| [[papers/hickman_2019]] | 2019 | 실험 | Android Auto 연결 기기 포렌식 아티팩트 |
+| [[papers/qasim_2020]] | 2020 | 실험 | ICS 제어 로직 주입 공격 네트워크 포렌식 (Reditus) |
+| [[papers/case_2020]] | 2020 | 실험 | macOS 페이지 큐 메모리 분석 + Volatility 플러그인 |
+| [[papers/nordvik_2020]] | 2020 | 실험 | 타임스탬프 기반 범용 파일시스템 메타데이터 카빙 (Best Paper) |
+| [[papers/brown_2020]] | 2020 | 시스템 구축 | GRR Rapid Response + Graylog GELF 통합 플러그인 |

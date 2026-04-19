@@ -17,7 +17,8 @@ path: "물리 메모리 (디스크: C:\\Windows\\System32\\config\\*, NTUSER.DAT
 attck: —
 sources:
   - dolangavitt_2008
-updated: 2026-04-15
+  - uroz_2019
+updated: 2026-04-19
 ---
 
 ## 개요
@@ -52,6 +53,8 @@ Windows 레지스트리는 물리 메모리에 디스크 하이브와 유사한 
 - 메모리 레지스트리 분석으로 디스크 분석보다 훨씬 많은 키·값 발견 (→ [[papers/dolangavitt_2008]])
 - Volatile Keys는 디스크에 없어 라이브 포렌식(RAM 덤프)으로만 수집 가능 (→ [[papers/dolangavitt_2008]])
 - 커널 수준 공격으로 메모리 레지스트리 캐시 수정 → 디스크 포렌식으로 탐지 불가; 메모리 포렌식으로만 탐지 (→ [[papers/dolangavitt_2008]])
+- 레지스트리 기반 ASEP(Run keys, Services, Winlogon, Active Setup, COM hijacking, Shim DB 등)은 모두 메모리 포렌식으로 탐지 가능 (→ [[papers/uroz_2019]])
+- Winesap Volatility 플러그인: REG_BINARY에서 PE 헤더, REG_SZ에서 suspicious path/shell command 탐지 (→ [[papers/uroz_2019]])
 
 ## 관련 페이지
-[[artifacts/Windows_NT_Heap]] · [[techniques/Registry_Memory_Forensics]]
+[[artifacts/Windows_NT_Heap]] · [[techniques/Registry_Memory_Forensics]] · [[techniques/Windows_ASEP_Persistence]]
