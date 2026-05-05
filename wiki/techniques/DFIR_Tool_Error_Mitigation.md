@@ -7,7 +7,8 @@ related_artifacts: []
 related_crime: []
 sources:
   - hargreaves_2024
-updated: 2026-04-15
+  - hargreaves_2025
+updated: 2026-05-03
 ---
 
 ## 개요
@@ -53,6 +54,7 @@ updated: 2026-04-15
 | 논문 | 핵심 발견 |
 |------|-----------|
 | [[papers/hargreaves_2024]] | 31개 프로세스 노드 추상 모델; 단계 간 오류 전파 체계 규명; CASE 표준 주석 방법 |
+| [[papers/hargreaves_2025]] | SOLVE-IT으로 확장 — 104개 기법 전체를 대상으로 오류 유형(INCOMP/INAC-*/MISINT) 및 완화책 색인; 도구 단위에서 기법 단위로 오류 분류 체계 확장 |
 
 ## 관련 페이지
-[[techniques/Selective_Seizure_Evaluation]] · [[techniques/Artifact_Knowledge_Management]] · [[techniques/Synthetic_Trace_Generation]]
+[[techniques/SOLVE_IT_Knowledge_Base]] · [[techniques/Selective_Seizure_Evaluation]] · [[techniques/Artifact_Knowledge_Management]] · [[techniques/Synthetic_Trace_Generation]]

@@ -1,5 +1,5 @@
 # Forensic Memex Wiki Index
-_Last updated: 2026-04-20 | Artifacts: 19 | Techniques: 28 | Papers: 29_
+_Last updated: 2026-05-03 | Artifacts: 19 | Techniques: 29 | Papers: 30_
 
 ## Artifacts
 
@@ -57,6 +57,7 @@ _Last updated: 2026-04-20 | Artifacts: 19 | Techniques: 28 | Papers: 29_
 | [[techniques/Smartphone_File_Triage_ML]] | Investigator | — | serhal_2021 |
 | [[techniques/Ransomware_Bitcoin_Detection_TDA]] | Investigator | — | akcora_2021 |
 | [[techniques/Explainable_DFAI]] | Both | — | solanke_2022 |
+| [[techniques/SOLVE_IT_Knowledge_Base]] | Both | — | hargreaves_2025 |
 
 ## Papers
 
@@ -91,3 +92,4 @@ _Last updated: 2026-04-20 | Artifacts: 19 | Techniques: 28 | Papers: 29_
 | [[papers/serhal_2021]] | 2021 | 실험 | 파일 메타데이터 ML 기반 스마트폰 파일 트리아지 |
 | [[papers/akcora_2021]] | 2021 | 실험 | TDA 기반 Bitcoin 랜섬웨어 주소 탐지 |
 | [[papers/solanke_2022]] | 2022 | 이론 | 설명 가능한 디지털 포렌식 AI(xDFAI) 프레임워크 |
+| [[papers/hargreaves_2025]] | 2025 | 시스템 구축 | MITRE ATT&CK 기반 디지털 포렌식 기법 지식 베이스 SOLVE-IT |

@@ -1,5 +1,12 @@
 # Forensic Memex Wiki Log
 
+## [2026-05-03] ingest | hargreaves_2025
+- 생성: papers/hargreaves_2025.md
+- 신규 생성: techniques/SOLVE_IT_Knowledge_Base.md
+- 업데이트: techniques/DFIR_Tool_Error_Mitigation.md (hargreaves_2025 소스 추가, findings 보완, 관련 페이지 링크 추가)
+- 업데이트: meta/index.md (Techniques 29개, Papers 30개)
+- 모순 없음 (hargreaves_2025는 hargreaves_2024의 직접 확장)
+
 ## [2026-04-20] ingest | raw/new 배치 4/14 (15개 완료)
 - **진행 상황**: raw/new 중 15개 ingest 완료
 - **완료**: schneider_2020, neshenko_2021, dragonas_2021, cheng_2021, serhal_2021, akcora_2021, solanke_2022
