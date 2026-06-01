@@ -2,8 +2,8 @@
 # Schema & Workflow Guide
 
 이 파일은 FL-Wiki의 구조, 컨벤션, 워크플로를 정의한다.
-Claude Project Instructions에 등록되어 있으며, 모든 작업의 기준이 된다.
-사용자와 Claude가 함께 진화시키는 living document다.
+Codex Project Instructions에 등록되어 있으며, 모든 작업의 기준이 된다.
+사용자와 Codex가 함께 진화시키는 living document다.
 
 ---
 
@@ -16,22 +16,21 @@ FL-Wiki/
 │   ├── domingues_2024.pdf
 │   └── ...
 │
-├── wiki/                 # Claude가 생성·관리 (사용자는 읽기만)
+├── wiki/                 # Codex가 생성·관리 (사용자는 읽기만)
 │   ├── artifacts/        # 아티팩트 페이지 ($MFT, $USNjrnl ...)
 │   ├── techniques/       # 공격·탐지·분석 기법 페이지
 │   ├── papers/           # 논문별 요약 페이지
-│   ├── experiments/      # 직접 테스트 기록 (날짜·담당자·환경 포함)
 │   └── meta/
 │       ├── index.md      # 전체 페이지 목록 + 한 줄 요약
-│       └── log.md        # 작업 이력 (ingest/query/lint/experiment)
+│       └── log.md        # 작업 이력 (ingest/query/lint)
 │
-└── CLAUDE.md        # 이 파일 (schema)
+└── AGENTS.md        # 이 파일 (schema)
 ```
 
 **핵심 원칙:**
-- `raw/` 는 변경하지 않는다. Claude는 읽기만 한다.
-- `wiki/` 는 Claude가 소유한다. 사용자는 읽고 탐색만 한다.
-- Obsidian = IDE / Claude = 프로그래머 / wiki = 코드베이스
+- `raw/` 는 변경하지 않는다. Codex는 읽기만 한다.
+- `wiki/` 는 Codex가 소유한다. 사용자는 읽고 탐색만 한다.
+- Obsidian = IDE / Codex = 프로그래머 / wiki = 코드베이스
 
 ---
 
@@ -87,12 +86,6 @@ updated: 2026-04-11
 - 공격자 대부분 $FILE_NAME 변조 누락 (→ [[vanini_2025]])
 - Tamper resistance: 지식 장벽이 요인 (→ [[vanini_2025]])
 
-## 실험 기록
-직접 테스트한 결과. 새 실험 추가 시 append.
-| 실험 | 날짜 | 담당자 | 결과 |
-|------|------|--------|------|
-| [[experiments/mft_timestomp_test_20260601]] | 2026-06-01 | 홍길동 | confirmed |
-
 ## 관련 페이지
 [[Timestomping]] · [[SI_FN_Mismatch]] · [[Tamper_Resistance_Factors]]
 ```
@@ -144,12 +137,6 @@ updated: 2026-04-11
 |------|-----------|
 | [[vanini_2025]] | 참가자 대부분 $FILE_NAME 누락 |
 | [[palmbach_2020]] | NTFS timestamp 신뢰도 분석 |
-
-## 실험 기록
-직접 테스트한 결과. 새 실험 추가 시 append.
-| 실험 | 날짜 | 담당자 | 결과 |
-|------|------|--------|------|
-| [[experiments/timestomp_detection_test_20260601]] | 2026-06-01 | 홍길동 | confirmed |
 
 ## 관련 페이지
 [[artifacts/$MFT]] · [[SI_FN_Mismatch]] · [[Tamper_Resistance_Factors]]
@@ -204,80 +191,17 @@ limitations: "n=10, 단일 시나리오"
 
 ---
 
-### 4. Experiment 페이지 (`wiki/experiments/`)
-
-직접 테스트한 결과 하나 = 페이지 하나. 논문 기반 Findings와 출처가 다르므로 분리 관리.
-
-**파일명:** `{대상아티팩트}_{테스트요약}_{YYYYMMDD}.md`
-예: `thumbcache_win11_cache_20260601.md`, `mft_timestomp_test_20260510.md`
-
-**YAML frontmatter:**
-```yaml
----
-experiment_id: thumbcache_win11_cache_20260601
-target_artifacts:
-  - Thumbcache
-related_techniques:
-  - Thumbcache_Forensic_Analysis
-tester: 홍길동
-date: 2026-06-01
-env:
-  os: Windows 11 23H2
-  tools:
-    - FTK Imager 4.7
-    - ThumbCache Viewer 1.1
-method_summary: "VM 스냅샷 후 이미지 열람, 복원 후 캐시 변화 비교"
-result: confirmed          # confirmed / inconclusive / contradicts_finding
-sources_compared:          # 결과를 비교한 논문 (있을 때만)
-  - quick_2014
-updated: 2026-06-01
----
-```
-
-**result 값 기준:**
-- `confirmed` — 논문·기존 wiki 내용과 일치하는 결과 관찰
-- `inconclusive` — 재현 실패 또는 결론 내리기 어려운 결과
-- `contradicts_finding` — 논문·기존 wiki 내용과 다른 결과 관찰 → artifact/technique 페이지에 모순 표시 필요
-
-**본문 구조:**
-```markdown
-## 목적
-무엇을 확인하려 했는가.
-
-## 환경
-OS, 도구, 버전, VM 여부 등 재현에 필요한 정보.
-
-## 절차
-1. 단계별 수행 내용
-
-## 관찰 결과
-실제로 본 것. 스크린샷 경로 포함 가능.
-
-## 해석
-결과가 무엇을 의미하는가. (추론은 명시적으로 표시)
-
-## 논문과의 비교
-| 논문 | 논문의 주장 | 이번 실험 결과 | 일치 여부 |
-|------|-------------|----------------|-----------|
-| [[quick_2014]] | 캐시 항목 삭제 후에도 복원 가능 | 복원 성공 확인 | ✅ |
-
-## 관련 페이지
-[[artifacts/Thumbcache]] · [[techniques/Thumbcache_Forensic_Analysis]]
-```
-
----
-
 ## 작업 절차 (Operations)
 
 ### Ingest — 새 논문 추가
 
-사용자가 할 일: `raw/` 에 PDF 저장 후 Claude에게 아래 명령.
+사용자가 할 일: `raw/` 에 PDF 저장 후 Codex에게 아래 명령.
 
 ```
 /ingest raw/vanini_2025.pdf
 ```
 
-Claude가 할 일 (순서대로):
+Codex가 할 일 (순서대로):
 1. PDF 읽기 → 핵심 내용 파악
 2. `wiki/papers/vanini_2025.md` 생성
 3. 직접 분석된 아티팩트 식별 → 각 artifact 페이지 업데이트 또는 신규 생성
@@ -293,30 +217,6 @@ Claude가 할 일 (순서대로):
 
 ---
 
-### Experiment — 직접 테스트 기록
-
-사용자가 할 일: 테스트 내용을 자연어로 설명하거나 메모를 붙여넣은 후 아래 명령.
-
-```
-/experiment
-```
-
-Claude가 할 일 (순서대로):
-1. 사용자가 제공한 내용에서 대상 아티팩트·기법, 환경, 절차, 결과 추출
-2. `wiki/experiments/{파일명}.md` 생성
-3. 관련 artifact 페이지의 `## 실험 기록` 테이블에 행 append
-4. 관련 technique 페이지의 `## 실험 기록` 테이블에 행 append
-5. `result: contradicts_finding` 인 경우 → 해당 artifact/technique 페이지에 `> ⚠ 모순: [[실험_페이지]]에서 반박` 표시
-6. `wiki/meta/index.md` Experiments 테이블 업데이트
-7. `wiki/meta/log.md` 에 experiment 기록 추가
-
-**판단 기준:**
-- 테스트를 직접 수행한 것만 experiment 페이지로 생성 (전문가 의견, 추측 불가)
-- 절차가 불완전해도 페이지 생성 — `method_summary` 에 "절차 미기록" 명시
-- 동일 아티팩트의 재테스트는 새 페이지로 생성 (날짜가 다르면 별개 관찰)
-
----
-
 ### Query — 질의응답
 
 사용자가 할 일: 자연어로 질문.
@@ -327,7 +227,7 @@ $USNjrnl 관련 수사 방법을 알려줘
 Timestomping 탐지를 우회하는 공격 방법은?
 ```
 
-Claude가 할 일:
+Codex가 할 일:
 1. `wiki/meta/index.md` 읽기 → 관련 페이지 파악
 2. 관련 artifact / technique / paper 페이지 읽기
 3. 인용과 함께 답변 합성
@@ -343,26 +243,23 @@ Claude가 할 일:
 /lint
 ```
 
-Claude가 점검할 항목:
+Codex가 점검할 항목:
 - 페이지 간 모순 (최신 논문이 기존 주장을 반박하는 경우)
 - 인바운드 링크 없는 고아 페이지
 - sources 목록에는 있지만 paper 페이지가 없는 논문
 - artifact 페이지에 Findings 섹션이 비어있는 경우
 - technique 페이지에 관련 artifact 링크가 누락된 경우
 - ATT&CK ID가 있는 technique 중 공식 ATT&CK 매핑이 안 된 것
-- `result: contradicts_finding` 실험이 있는데 해당 artifact/technique 페이지에 모순 표시가 없는 경우
-- experiment 페이지가 있는데 관련 artifact/technique 페이지의 `## 실험 기록` 테이블에 누락된 경우
-- index.md Experiments 테이블에 누락된 experiment 페이지
 
 ---
 
 ## index.md 구조
 
-`wiki/meta/index.md` 는 Claude가 query 시 가장 먼저 읽는 파일.
+`wiki/meta/index.md` 는 Codex가 query 시 가장 먼저 읽는 파일.
 
 ```markdown
 # Forensic Memex Wiki Index
-_Last updated: 2026-04-11 | Artifacts: 13 | Techniques: 8 | Papers: 3 | Experiments: 2_
+_Last updated: 2026-04-11 | Artifacts: 13 | Techniques: 8 | Papers: 3_
 
 ## Artifacts
 | 페이지 | Layer | 주요 기법 | Sources |
@@ -382,11 +279,6 @@ _Last updated: 2026-04-11 | Artifacts: 13 | Techniques: 8 | Papers: 3 | Experime
 |--------|------|--------|-----------|
 | [[papers/vanini_2025]] | 2025 | User study | Timestomping live tampering |
 | [[papers/domingues_2024]] | 2024 | 실험 | FIDO2 passkey artifacts |
-
-## Experiments
-| 페이지 | 날짜 | 담당자 | 대상 아티팩트 | 결과 |
-|--------|------|--------|---------------|------|
-| [[experiments/thumbcache_win11_cache_20260601]] | 2026-06-01 | 홍길동 | Thumbcache | confirmed |
 ```
 
 ---
@@ -410,12 +302,6 @@ _Last updated: 2026-04-11 | Artifacts: 13 | Techniques: 8 | Papers: 3 | Experime
 ## [2026-04-11] query | "$USNjrnl 수사 방법"
 - 참조 페이지: artifacts/$USNjrnl.md, techniques/Timestomping.md
 - 답변 wiki 저장: techniques/USNjrnl_Investigation.md
-
-## [2026-06-01] experiment | thumbcache_win11_cache_20260601
-- 생성: experiments/thumbcache_win11_cache_20260601.md
-- 업데이트: artifacts/Thumbcache.md (실험 기록 행 추가)
-- 업데이트: techniques/Thumbcache_Forensic_Analysis.md (실험 기록 행 추가)
-- 결과: confirmed (quick_2014 주장과 일치)
 ```
 
 ---
@@ -460,6 +346,3 @@ git push
 - ATT&CK ID 추측 입력
 - 기존 Findings를 덮어쓰기 — 항상 append
 - index.md / log.md 업데이트 생략
-- 직접 수행하지 않은 테스트를 experiment 페이지로 생성
-- 기존 실험 기록을 덮어쓰기 — 재테스트는 새 페이지로 생성
-- `result: contradicts_finding` 인데 관련 artifact/technique 페이지에 모순 표시 생략
