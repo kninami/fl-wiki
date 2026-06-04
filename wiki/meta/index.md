@@ -1,5 +1,5 @@
 # Forensic Memex Wiki Index
-_Last updated: 2026-04-15 | Artifacts: 11 | Techniques: 14 | Papers: 14_
+_Last updated: 2026-06-04 | Artifacts: 13 | Techniques: 16 | Papers: 14 | Experiments: 2_
 
 ## Artifacts
 
@@ -16,6 +16,8 @@ _Last updated: 2026-04-15 | Artifacts: 11 | Techniques: 14 | Papers: 14_
 | [[artifacts/ReFS_Logfile]] | FS | ReFS Journaling Forensics | lee_2021 |
 | [[artifacts/ReFS_Change_Journal]] | FS | ReFS Journaling Forensics | lee_2021 |
 | [[artifacts/Microsoft365_DRF]] | APP | Data Remnants Forensics | joun_2023 |
+| [[artifacts/Thumbcache]] | OS | Thumbcache_Forensic_Analysis | quick_2014, joo_2022 |
+| [[artifacts/Windows_edb]] | OS | Thumbcache_Forensic_Analysis | quick_2014 |
 
 ## Techniques
 
@@ -35,6 +37,8 @@ _Last updated: 2026-04-15 | Artifacts: 11 | Techniques: 14 | Papers: 14_
 | [[techniques/Artifact_Knowledge_Management]] | Both | — | grajeda_2018 |
 | [[techniques/DFIR_Tool_Error_Mitigation]] | Investigator | — | hargreaves_2024 |
 | [[techniques/Evidence_Preservation_Evolving]] | Investigator | — | spichiger_2025 |
+| [[techniques/Thumbcache_Forensic_Analysis]] | Investigator | — | quick_2014 |
+| [[techniques/Digital_Sex_Crime_Mobile_Artifact_Triage]] | Investigator | — | shin_2020, shin_2021, kim_2021 |
 
 ## Papers
 
@@ -54,3 +58,9 @@ _Last updated: 2026-04-15 | Artifacts: 11 | Techniques: 14 | Papers: 14_
 | [[papers/grajeda_2018]] | 2018 | 시스템 구축 | AGP 아티팩트 지식 공유 플랫폼 |
 | [[papers/dolangavitt_2008]] | 2008 | 실험 | 물리 메모리 내 Windows 레지스트리 포렌식 |
 | [[papers/murphey_2007]] | 2007 | 실험 | Windows NT5 이벤트 로그 자동 복구 |
+
+## Experiments
+| 페이지 | 날짜 | 담당자 | 대상 아티팩트 | 결과 |
+|--------|------|--------|---------------|------|
+| [[experiments/thumbcache_win11_maxsize_20260604]] | 2026-06-04 | 조경숙 | Thumbcache | confirmed |
+| [[experiments/thumbcache_win11_deletion_persistence_20260604]] | 2026-06-04 | 조경숙 | Thumbcache | confirmed |

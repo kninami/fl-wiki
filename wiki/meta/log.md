@@ -1,5 +1,23 @@
 # Forensic Memex Wiki Log
 
+## [2026-06-04] experiment | thumbcache_win11_maxsize_20260604
+- 생성: experiments/thumbcache_win11_maxsize_20260604.md
+- 업데이트: artifacts/Thumbcache.md (Win11 OS 테이블 행 추가, Findings 3개 추가, 실험 기록 행 추가)
+- 업데이트: techniques/Thumbcache_Forensic_Analysis.md (실험 기록 행 추가)
+- 결과: confirmed (Win11 DB 파일 체계, 용량 상한, EXIF→저장 DB 분기 신규 확인)
+- 출처: 조경숙 개인과제 (학번 2026710464)
+
+## [2026-06-04] experiment | thumbcache_win11_deletion_persistence_20260604
+- 생성: experiments/thumbcache_win11_deletion_persistence_20260604.md
+- 업데이트: artifacts/Thumbcache.md (Findings 2개 추가, 실험 기록 행 추가)
+- 업데이트: techniques/Thumbcache_Forensic_Analysis.md (실험 기록 행 추가)
+- 결과: confirmed (파일 삭제 후 잔류 quick_2014 일치; LRU 교체 알고리즘은 FIFO 가능성 있어 불확실)
+- 출처: 조경숙 개인과제 (학번 2026710464)
+
+## [2026-06-04] index 보완
+- 업데이트: meta/index.md (artifacts/Thumbcache, artifacts/Windows_edb, techniques/Thumbcache_Forensic_Analysis, techniques/Digital_Sex_Crime_Mobile_Artifact_Triage 누락 항목 추가)
+- 업데이트: meta/index.md (Experiments 섹션 신설)
+
 ## [2026-04-15] ingest | 전체 초기 구축 (14개 논문)
 
 ### uroz_2026
