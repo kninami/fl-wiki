@@ -1,5 +1,22 @@
 # Forensic Memex Wiki Log
 
+## [2026-06-07] Q&A 반영 | kimyonghyun_2026
+- 업데이트: artifacts/iOS_Backup_Manifest_db.md (Q4 Manifest.db 암호화 — 원문에 없던 추론 정정, Q3 손상 복구, Q9 파일명 변경)
+- 업데이트: artifacts/iOS_Backup_Info_plist.md (Q10 암호화 백업 평문)
+- 업데이트: techniques/iOS_Backup_Forensics.md (Q10 1단계, Q3 2.5단계 신설, Q11 bplist dedup, Q9 파일명 변경 주의)
+- 업데이트: papers/kimyonghyun_2026.md (limitations에 Q&A 보완 노트 추가)
+- 출처: 발표스크립트 + 질의응답 txt (raw/experiments/)
+
+## [2026-06-07] ingest | kimyonghyun_2026
+- 생성: papers/kimyonghyun_2026.md
+- 신규 생성: artifacts/iOS_Backup_Manifest_db.md
+- 신규 생성: artifacts/iOS_Backup_Info_plist.md
+- 신규 생성: artifacts/iOS_Backup_Manifest_plist.md
+- 신규 생성: artifacts/iOS_Backup_Status_plist.md
+- 신규 생성: techniques/iOS_Backup_Forensics.md
+- 업데이트: meta/index.md, meta/log.md
+- 비고: raw/experiments/ 내 위치. iOS 모바일 포렌식 최초 아티팩트. 기존 Windows 중심 wiki와 충돌 없음.
+
 ## [2026-06-04] experiment | thumbcache_win11_maxsize_20260604
 - 생성: experiments/thumbcache_win11_maxsize_20260604.md
 - 업데이트: artifacts/Thumbcache.md (Win11 OS 테이블 행 추가, Findings 3개 추가, 실험 기록 행 추가)
