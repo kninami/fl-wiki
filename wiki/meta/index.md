@@ -1,5 +1,5 @@
 # Forensic Memex Wiki Index
-_Last updated: 2026-06-04 | Artifacts: 13 | Techniques: 16 | Papers: 14 | Experiments: 2_
+_Last updated: 2026-06-07 | Artifacts: 17 | Techniques: 17 | Papers: 15 | Experiments: 2_
 
 ## Artifacts
 
@@ -18,6 +18,10 @@ _Last updated: 2026-06-04 | Artifacts: 13 | Techniques: 16 | Papers: 14 | Experi
 | [[artifacts/Microsoft365_DRF]] | APP | Data Remnants Forensics | joun_2023 |
 | [[artifacts/Thumbcache]] | OS | Thumbcache_Forensic_Analysis | quick_2014, joo_2022 |
 | [[artifacts/Windows_edb]] | OS | Thumbcache_Forensic_Analysis | quick_2014 |
+| [[artifacts/iOS_Backup_Manifest_db]] | APP | iOS_Backup_Forensics | kimyonghyun_2026 |
+| [[artifacts/iOS_Backup_Info_plist]] | APP | iOS_Backup_Forensics | kimyonghyun_2026 |
+| [[artifacts/iOS_Backup_Manifest_plist]] | APP | iOS_Backup_Forensics | kimyonghyun_2026 |
+| [[artifacts/iOS_Backup_Status_plist]] | APP | iOS_Backup_Forensics | kimyonghyun_2026 |
 
 ## Techniques
 
@@ -39,6 +43,7 @@ _Last updated: 2026-06-04 | Artifacts: 13 | Techniques: 16 | Papers: 14 | Experi
 | [[techniques/Evidence_Preservation_Evolving]] | Investigator | — | spichiger_2025 |
 | [[techniques/Thumbcache_Forensic_Analysis]] | Investigator | — | quick_2014 |
 | [[techniques/Digital_Sex_Crime_Mobile_Artifact_Triage]] | Investigator | — | shin_2020, shin_2021, kim_2021 |
+| [[techniques/iOS_Backup_Forensics]] | Investigator | — | kimyonghyun_2026 |
 
 ## Papers
 
@@ -58,6 +63,7 @@ _Last updated: 2026-06-04 | Artifacts: 13 | Techniques: 16 | Papers: 14 | Experi
 | [[papers/grajeda_2018]] | 2018 | 시스템 구축 | AGP 아티팩트 지식 공유 플랫폼 |
 | [[papers/dolangavitt_2008]] | 2008 | 실험 | 물리 메모리 내 Windows 레지스트리 포렌식 |
 | [[papers/murphey_2007]] | 2007 | 실험 | Windows NT5 이벤트 로그 자동 복구 |
+| [[papers/kimyonghyun_2026]] | 2026 | 실험 분석 | iOS 백업 Manifest.db·plist 구조 분석 |
 
 ## Experiments
 | 페이지 | 날짜 | 담당자 | 대상 아티팩트 | 결과 |
